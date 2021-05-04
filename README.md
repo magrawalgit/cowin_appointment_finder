@@ -28,3 +28,15 @@ fee=0
 python cowin_appointment_finder.py
 
 Output will be stored in a text log as below:
+```
+[2021-05-04 21:21:30,446] ----------------------------
+[2021-05-04 21:21:30,446] date = 09-05-2021, pin_code = 413102
+[2021-05-04 21:21:30,461] https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=413102&date=09-05-2021
+[2021-05-04 21:21:30,824] name = PARWADI, available_capacity = 44, vaccine = COVISHIELD, fee = 0, min_age_limit = 45
+[2021-05-04 21:21:30,824] name = Undavadisupe, available_capacity = 47, vaccine = COVISHIELD, fee = 0, min_age_limit = 45
+[2021-05-04 21:21:30,824] name = Shirsufal PHC, available_capacity = 48, vaccine = COVISHIELD, fee = 0, min_age_limit = 45
+[2021-05-04 21:21:30,824] name = Pimpali, available_capacity = 46, vaccine = COVISHIELD, fee = 0, min_age_limit = 45
+[2021-05-04 21:21:30,824] name = Sirsane, available_capacity = 50, vaccine = COVISHIELD, fee = 0, min_age_limit = 45
+[2021-05-04 21:21:30,824] name = KARHAWAGAJ, available_capacity = 50, vaccine = COVISHIELD, fee = 0, min_age_limit = 45
+[2021-05-04 21:21:30,824] ----------------------------
+```
