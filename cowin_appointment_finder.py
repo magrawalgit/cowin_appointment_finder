@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 
+# API guide
+# https://apisetu.gov.in/public/marketplace/api/cowin
+
 from datetime import datetime, timedelta
 import time
 
@@ -27,7 +30,7 @@ log_filename = 'cowin_appointment_finder.log'
 
 fhan = RotatingFileHandler(log_filename, maxBytes=1000000, backupCount=5)                                                                        
 fhan.setLevel(logging.INFO)
-formatter = logging.Formatter("[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s")                           
+formatter = logging.Formatter("[%(asctime)s] %(message)s")                           
 fhan.setFormatter(formatter)
 logger.addHandler(fhan)
 
