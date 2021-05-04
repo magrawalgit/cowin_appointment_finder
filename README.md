@@ -19,12 +19,13 @@ configparser
 * days_ahead=check appointments for next N days
 * min_age_limit=45 and above specify 45
 * fee=0 for free vaccines
-
+```
 e.g.
 pincode_list=413102,413115,413102
 days_ahead=5
 min_age_limit=45
 fee=0
+```
 
 **4 - open command prompt and run the utility**
 python cowin_appointment_finder.py
