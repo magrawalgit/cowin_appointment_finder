@@ -4,7 +4,7 @@ This is a small python utility to find available appointments of the desired pin
 git clone git@github.com:mata1234/cowin_appointment_finder.git
 
 **1 - Install python**
-**2 - pip install below packages (if not already)**
+**2 - pip install required packages (if not already)**
 ```
 datetime
 time
