@@ -1,1 +1,29 @@
-# cowin_appointment_finder
+# CoWin Appointment Finder
+
+This is a small python utility to find available appointments of the desired pin code(s) for next N days, for a given age limit.
+
+**1 - Install python**
+**2 - pip install below packages (if not already)**
+
+datetime
+time
+logging
+logging.handlers
+urllib3
+configparser
+
+**3 - setup config in the setup.cfg**
+pincode_list=List of pin codes seperated by comma
+days_ahead=check appointments for next N days
+min_age_limit=45 and above specify 45
+fee=0 for free vaccines
+e.g.
+pincode_list=413102,413115,413102
+days_ahead=5
+min_age_limit=45
+fee=0
+
+**4 - open command prompt and run the utility**
+python cowin_appointment_finder.py
+
+Output will be stored in a text log as below:
