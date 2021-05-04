@@ -5,19 +5,21 @@ git clone git@github.com:mata1234/cowin_appointment_finder.git
 
 **1 - Install python**
 **2 - pip install below packages (if not already)**
-
+```
 datetime
 time
 logging
 logging.handlers
 urllib3
 configparser
+```
 
 **3 - setup config in the setup.cfg**
-pincode_list=List of pin codes seperated by comma
-days_ahead=check appointments for next N days
-min_age_limit=45 and above specify 45
-fee=0 for free vaccines
+* pincode_list=List of pin codes seperated by comma
+* days_ahead=check appointments for next N days
+* min_age_limit=45 and above specify 45
+* fee=0 for free vaccines
+
 e.g.
 pincode_list=413102,413115,413102
 days_ahead=5
