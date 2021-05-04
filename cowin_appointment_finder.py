@@ -86,16 +86,21 @@ def process():
                         
                 res_list = json.loads(res.text)
                 #logger.info(res_list)
-                for s in res_list['sessions']:
-                    # logger.info(f'{s}')
-                    min_age_limit = s['min_age_limit']
-                    fee = s['fee']
-                    name = s['name']
-                    available_capacity = int(s['available_capacity'])
-                    vaccine = s['vaccine']
-                    
-                    if (min_age_limit == c_min_age_limit and fee == c_fee and available_capacity > 0):
-                        logger.info(f'name = {name}, available_capacity = {available_capacity}, vaccine = {vaccine}, fee = {fee}, min_age_limit = {min_age_limit}')
+                if (len(res_list['sessions']) == 0):
+                    logger.info(f'No available sessions.')
+                else:
+                    for s in res_list['sessions']:
+                        # logger.info(f'{s}')
+                        min_age_limit = s['min_age_limit']
+                        fee = s['fee']
+                        name = s['name']
+                        available_capacity = int(s['available_capacity'])
+                        vaccine = s['vaccine']
+                        
+                        if (min_age_limit == c_min_age_limit and fee == c_fee and available_capacity > 0):
+                            logger.info(f'name = {name}, available_capacity = {available_capacity}, vaccine = {vaccine}, fee = {fee}, min_age_limit = {min_age_limit}')
+                        else:
+                            logger.info(f'No available capacity.')
                         
                 logger.info('----------------------------')
                     
